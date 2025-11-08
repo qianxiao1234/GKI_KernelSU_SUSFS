@@ -46,8 +46,9 @@ on:
       #   type: string  # This input is required if 'Other' is chosen
       version:
         description: '自定义版本名(如5.10.198后面的字符/留空则使用默认版本号)'
-        required: false
+        required: true
         type: string
+        default: '-Orange-1337'
       use_zram:
         description: '是否开启增加更多ZRAM算法?'
         required: true
@@ -57,7 +58,7 @@ on:
         description: '是否开启KPM功能?'
         required: true
         type: boolean
-        default: false
+        default: true
       use_O2:
         description: '是否开启O2编译优化?'
         required: true

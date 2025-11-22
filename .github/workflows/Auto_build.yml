@@ -103,6 +103,6 @@ jobs:
                 "use_kpm": "true",
                 "use_O2": "true",
                 "BBG": "true",
-                "get_manager": "true"
+                "get_manager": "false"
               }
             }'

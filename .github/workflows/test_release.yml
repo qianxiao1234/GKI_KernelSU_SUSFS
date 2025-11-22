@@ -274,8 +274,7 @@ jobs:
         功能:
         -> ${{ inputs.kernelsu_variant == 'Next' && 'KernelSU-' || '' }}${{ inputs.kernelsu_variant }}${{ inputs.kernelsu_variant == 'Official' && '原版' || '' }}${{ inputs.kernelsu_branch == 'Dev(开发)' && format('({0})', needs.get_manager.outputs.ksuVer) || '稳定版' }}
         -> SUSFS ඞ ${{ needs.get_manager.outputs.susVer }}
-        -> ${{ inputs.kernelsu_variant == 'SukiSU' && 'Manual hooks' || (inputs.kernelsu_variant == 'Official' || inputs.kernelsu_variant == 'MKSU') && 'Kprobes Hooks' || 'VFS Hooks v1.4' }}
-        ${{ inputs.kernelsu_variant != 'Official' && '-> Magic Mount 支持' || '-> OVERLAYFS 支持' }}
+        -> SUSFS Inline Hooks
         -> LineageOS 检测对抗
         -> jit-zygote-cache 检测对抗
         -> O2编译优化 ${{ inputs.use_O2 && '启用' || '未启用' }}

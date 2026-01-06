@@ -2,7 +2,7 @@ name: Auto Trigger on SukiSU Update
 
 on:
   schedule:
-    - cron: '0 0 */1 * *'  # 每1天执行一次
+    - cron: '0 0 */3 * *'  # 每3天执行一次
   workflow_dispatch:     # 允许手动触发
 
 jobs:
@@ -100,7 +100,7 @@ jobs:
                 "kernels_to_build": "all",
                 "version": "-Orange-1337",
                 "use_zram": "true",
-                "use_kpm": "true",
+                "use_kpm": "false",
                 "use_O2": "true",
                 "BBG": "true",
                 "get_manager": "true"

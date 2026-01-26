@@ -9,7 +9,7 @@ jobs:
   check-and-trigger:
     runs-on: ubuntu-latest
     # 如果要运行自动编译工作流，请手动添加/修改仓库所有者用户名
-    if: contains(fromJSON('["ShirkNeko", "zzh20188", "elysias123", "quruoshui"]'), github.repository_owner)
+    if: contains(fromJSON('["ShirkNeko", "zzh20188", "elysias123", "quruoshui", "qianxiao1234"]'), github.repository_owner)
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -98,7 +98,7 @@ jobs:
                 "kernelsu_variant": "SukiSU",
                 "kernelsu_branch": "Dev(开发)",
                 "kernels_to_build": "all",
-                "version": "-Orange-1337",
+                "version": "-GitHub@qianxiao1234",
                 "use_zram": "true",
                 "use_kpm": "false",
                 "use_O2": "true",

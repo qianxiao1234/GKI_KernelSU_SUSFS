@@ -76,11 +76,11 @@ on:
         type: boolean
         default: false
 jobs:
-  get_manager:
-    uses: ./.github/workflows/get-manager.yml
-    secrets: inherit
-    with:
-      kernelsu_variant: ${{ inputs.kernelsu_variant }}
+  # get_manager:
+  #   uses: ./.github/workflows/get-manager.yml
+  #   secrets: inherit
+  #   with:
+  #     kernelsu_variant: ${{ inputs.kernelsu_variant }}
 
   build-kernel-a12-5-10:
     if: contains(github.event.inputs.kernels_to_build, 'all') || contains(github.event.inputs.kernels_to_build, 'a12-5.10')

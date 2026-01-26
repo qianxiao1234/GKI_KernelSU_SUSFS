@@ -115,6 +115,10 @@ jobs:
             echo "SukiSU..."
             REPO="SukiSU-Ultra/SukiSU-Ultra"
             KSUM="Manager"
+          elif [ "${{ inputs.kernelsu_variant }}" == "ReSukiSU" ]; then
+            echo "ReSukiSU..."
+            REPO="ReSukiSU/ReSukiSU"
+            KSUM="Manager"
           elif [ "${{ inputs.kernelsu_variant }}" == "MKSU" ]; then
             echo "MKSU..."
             REPO="5ec1cff/KernelSU"

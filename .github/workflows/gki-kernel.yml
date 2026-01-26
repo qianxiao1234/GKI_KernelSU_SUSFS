@@ -308,6 +308,10 @@ jobs:
             echo "Applying SUSFS patches for SukiSU..."
              cd ./KernelSU
             echo "Applying SukiSU specific SUSFS patch..."
+          elif [ "${{ inputs.kernelsu_variant }}" == "ReSukiSU" ]; then
+            echo "Applying SUSFS patches for ReSukiSU..."
+             cd ./KernelSU
+            echo "Applying ReSukiSU specific SUSFS patch..."
           else
             echo "Invalid KernelSU variant selected!"
             exit 1
